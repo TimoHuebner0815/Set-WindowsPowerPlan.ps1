@@ -30,10 +30,10 @@ else
         
         #Activated the Power Plan using powercfg.exe
         powercfg /setactive ([string]$PowerPlan.InstanceID).Replace("Microsoft:PowerPlan\{","").Replace("}","")
-        Write-Host ("Power plan Settings are changed to {0}!" -f $PowerPlan.ElementName)  
+        Write-Host ("Power Plan Settings are changed to {0}!" -f $PowerPlan.ElementName)  
     }
     catch
     {
-        Write-Host ("Power plan Settings are still {0}!" -f $ActivPowerPlan.ElementName)
+        Write-Host ("Power Plan Settings are still {0}!" -f $ActivPowerPlan.ElementName)
     }
 }
