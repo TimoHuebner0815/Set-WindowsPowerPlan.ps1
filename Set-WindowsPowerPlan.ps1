@@ -1,5 +1,6 @@
 # .PARAMETER PlanName
 # The Name of the Windows Power Plan that is required to set
+# PowerShell.exe -ExecutionPolicy Bypass -File C:\Scripts\Set-WindowsPowerPlan.ps1 -PlanName 'High Performance'
 
 Param
 (
