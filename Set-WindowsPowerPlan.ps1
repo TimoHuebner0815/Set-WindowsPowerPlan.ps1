@@ -27,7 +27,7 @@ else
         $PowerPlan = $PowerPlans | Where-Object { $_.ElementName -eq $PlanName }
 
         #Activated the Power Plan / Method do not work anymore
-        #Plan.Activate();
+        #PowerPlan.Activate();
         
         #Activated the Power Plan using powercfg.exe
         powercfg /setactive ([string]$PowerPlan.InstanceID).Replace("Microsoft:PowerPlan\{","").Replace("}","")
